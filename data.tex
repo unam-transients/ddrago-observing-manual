@@ -1,0 +1,56 @@
+\chapter{Data}
+
+\section{Data Files}
+
+The data files are created subdirectories whose names are the program, block, and visit identifiers. For example, the files for program 2022A-2001, block 10, visit 0 are created in the directory
+
+\begin{quote}
+\verb|2022A-2001/10/0/|
+\end{quote}
+
+The base name of each image created by the executor is the UTC time in ISO 8601 basic combined format followed by the channel name (e.g., \verb|C0|, \verb|C1|, \verb|C2|, \ldots), followed by a letter indicating the type of exposure (\verb|o| for object, \verb|f| for flat, \verb|b| for bias, and \verb|d| for dark). 
+
+In COLIBRÍ, \verb|C0| refers to the OGSE test camera, \verb|C1| to the blue channel of DDRAGO, and \verb|C2| to the red channel of DDRAGO.
+
+For example,
+
+\begin{quote}
+\verb|20220405T072311C1o|\\
+\verb|20220405T072341C1b|\\
+\verb|20220405T072351C1f|\\
+\verb|20220405T072411C1d|
+\end{quote}
+
+For each image there are two files: the full FITS image compressed losslessly with fpack (with suffix \verb|.fz|) and a text version of the header (with suffix \verb|.fits.txt|). In the text version, each record is separated with a newline character.
+
+FITS images compressed with fpack can be read by AstroPy (although you need to select \verb|hdu[1]| rather than \verb|hdu[0]|) and SAOImage DS9.
+
+\section{FITS Header Records}
+
+The FITS header records are largely self-documented by comments. However, these are the most relevant header records for searching for particular data:
+
+\begin{itemize}
+\item \verb|DATE-OBS|: The UTC date of the start of the exposure.
+\item \verb|CCD_NAME|: The channel (e.g., \verb|C0|, \verb|C1|, \verb|C2|, \ldots).
+\item \verb|EXPTIME|: The exposure time (seconds).
+\item \verb|EXPTYPE|: The exposure type (e.g., \verb|object|, \verb|flat|, \verb|bias|, \verb|dark|).
+\item \verb|FILTER|: The selected filter name.
+\item \verb|BINNING|: The detector binning (pixels).
+\item \verb|PRPID|: The proposal identifier (integer).
+\item \verb|BLKID|: The block identifier (integer).
+\item \verb|VSTID|: The visit identifier (integer).
+\item \verb|STRSTRA|: The J2000 RA of the target at the start of the exposure (degrees).
+\item \verb|STRSTDE|: The J2000 declination of the target at the start of the exposure (degrees).
+\item \verb|STROBHA|: The observed HA of the target at the start of the exposure (degrees).
+\item \verb|STROBDE|: The observed declination of the target at the start of the exposure (degrees).
+\item \verb|STROBAZ|: The observed azimuth of the target at the start of the exposure (degrees).
+\item \verb|STROBZ|: The observed zenith distance of the target at the start of the exposure (degrees).
+\item \verb|STROBAM|: The observed airmass of the target at the start of the exposure.
+\item \verb|SMNZD|: The observed zenith distance of the Moon at the start of the exposure (degrees).
+\item \verb|SMNIL|: The illuminated fraction of the Moon at the start of the exposure.
+\item \verb|SMNTD|: The distance between the target and the Moon at the start of the exposure (degrees).
+\item \verb|SSNZD|: The observed zenith distance of the Sun at the start of the exposure (degrees).
+\end{itemize}
+
+For each record that begins with \verb|S| and refers to the start of the exposure, there is a corresponding record that begins with \verb|E| and refers to the end of the exposure. So, for example, \verb|STROBAM| gives the airmass at the start of the exposure and \verb|ETROBAM| gives the airmass at the end of the exposure.
+
