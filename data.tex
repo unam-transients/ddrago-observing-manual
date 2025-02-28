@@ -54,3 +54,80 @@ The FITS header records are largely self-documented by comments. However, these 
 
 For each record that begins with \verb|S| and refers to the start of the exposure, there is a corresponding record that begins with \verb|E| and refers to the end of the exposure. So, for example, \verb|STROBAM| gives the airmass at the start of the exposure and \verb|ETROBAM| gives the airmass at the end of the exposure.
 
+\section{Downloading Data}
+
+Data are available from ratir.astrosen.unam.mx, an rsync server in Ensenada. We shortly hope to have a second server in Mexico City. The technical contact of each program will be provided with an account name and password for the server.
+
+We recommend reading the man page or a tutorial for rsync. Each program is assigned its own “module” in the terminology of rsync. 
+
+We have noted deficiencies in the \verb|rsync| command in MacOS. We recommend either downloading data from a Linux machine or installing the Homebrew version of rsync (with the command \verb|brew install rsync|, assuming Homebrew is already installed) and then using \verb|/opt/homebrew/bin/rsync| instead of plain \verb|rsync|.
+
+On the rsync server, files are organized in directories as follows:
+\begin{quote}
+<date>/<program-identifier>/<block-identifier>/<visit-identifier>/
+\end{quote}
+
+The date is in the form YYYYMMDD. The program identifiers have the form <semester>-<number>. For early science observations, the block and visit identifiers are determined by the science operations team who typically assign a different block identifier to each target and use visit identified 0 for all science exposures.
+
+We provided to each program raw flats, biases, and darks in addition to their science data. The flats are in program <semester>-0001, biases in <semester>-0002, and darks in <semester>-0003.
+
+Here are some examples of useful commands. We assume the program identifier is 2025A-2081 and the passwords is PASSWORD.
+
+\begin{enumerate}
+\item
+List all files at the top level in the archive:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/
+\end{verbatim}
+\end{quote}
+
+\item
+List all files at the second level in the archive:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/*/
+\end{verbatim}
+\end{quote}
+
+\item
+List all files in the archive:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/
+\end{verbatim}
+\end{quote}
+
+\item
+Copy all files in the archive into the current directory, maintaining the directory structure:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/ .
+\end{verbatim}
+\end{quote}
+
+\item
+Copy all science files in the archive into the current directory, maintaining the directory structure:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/2025A-2081/ .
+\end{verbatim}
+\end{quote}
+
+\item
+Copy the science files from 2025-02-28 into the current directory, maintaining the directory structure:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/2025A-2081/20250228/ .
+\end{verbatim}
+\end{quote}
+
+\item
+Copy the flat field files from 2025-02-28 into the current directory, maintaining the directory structure:
+\begin{quote}\footnotesize\begin{verbatim}
+RSYNC_PASSWORD=PASSWORD \
+rsync -a rsync://2025A-2081@ratir.astrosen.unam.mx/2025A-2081/2025A-0001/20250228/ .
+\end{verbatim}
+\end{quote}
+
+\end{enumerate}
