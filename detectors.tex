@@ -2,6 +2,19 @@
 
 The instrument uses two Spectral Instruments 1110S CCD detector systems, each with a backside-illuminated e2v 231-84 CCD. These detectors have a format of $4\mathrm{k}\times4\mathrm{k}$ with 15~{\micron} pixels. The detectors have the “astro multi-2” AR coating and deep-depleted silicon. The red detector also has e2v's fringing-suppression treatment. They are cooled by a Brookes Polycold® PCC Compact Cooler with PT-30 refrigerant. Each detector has an integrated Vincent/Uniblitz CS90HS1T0 shutter.
 
+\section{Detectors and Channels}
+
+The detectors can be identified by the value of the \verb|DTDS| record in the FITS header. The value is \verb|'SI 1110-167'| for the blue detector and \verb|'SI 1110-185'| for the red detector.
+
+The channel can be identified by the value of the \verb|INSTRUME| record in the FITS header. The value is \verb|'C1'| for the blue channel and \verb|'C2'| for the red channel.
+
+Note that:
+\begin{itemize}
+  \item From 2025-01-05 until 2025-03-10, the blue CCD was installed in the blue channel, but the red CCD was not in service.
+  \item From 2025-03-19 until 2025-08-27,  while the blue detector was being repaired, the \emph{red} detector was installed in the \emph{blue} channel.
+  \item Since 2025-08-30, both detectors have been installed in their corresponding channels.
+\end{itemize}
+
 \section{Read Modes}
 
 The hardware controller offers read frequencies of 1.01~MHz, 502.5~kHz, and 332.2~kHz, and low- and high gain modes. Combinations of these are exposed by the instrument control system as “read modes”. 
@@ -36,9 +49,7 @@ The only read mode supported for science observations is read mode 0, which comb
 \end{center}
 \end{figure}
 
-The detector has an active area of $4096~\mbox{columns} \times 4112~\mbox{rows}$. The controller reads it using the “split full frame read-out through four amplifiers” scheme \citep[p.~17]{e2v} with 50 columns of underscan at the start and end of each row, giving a total size of $4196~\mbox{columns} \times 4112~\mbox{rows}$ divided into four quadrants. This is shown in Figure~\ref{figure:format}.
-
-Each quadrant of the detector has slightly different bias level and gain, and this gives a clear pattern in raw exposures. However, subtracting the underscan level and residual bias and dividing by a flat field largely removes these differences.
+Both detectors have an active area of $4096~\mbox{columns} \times 4112~\mbox{rows}$. The controller reads them using the “split full frame read-out through four amplifiers” scheme \citep[p.~17]{e2v} with 50 columns of underscan at the start and end of each row, giving a total size of $4196~\mbox{columns} \times 4112~\mbox{rows}$ divided into four quadrants. This is shown in Figure~\ref{figure:format}. Each quadrant has slightly different bias level and gain, and this gives a clear pattern in raw exposures. However, subtracting the underscan level and residual bias and dividing by a flat field largely removes these differences.
 
 We do not typically use the full native format. In the laboratory, the first and last rows showed unusual behavior, with higher values in the underscan regions and lower values in the active regions \citep{laboratory}. Also, the underscan regions of 50 columns are not commensurate with a binning of 4.  However, the full native format is available as an engineering mode with window name \verb|full|.
 
@@ -162,6 +173,8 @@ To simplify cable handling, the telescope derotator is only capable of rotating 
 
 If you wish to correct the orientation of raw data yourself, the engineering team recommends this code:
 \begin{quote}\footnotesize\begin{verbatim}
+if header["INSTRUME"] == "C2":
+    data = np.flipud(data)
 rotation = header["SMTMRO"]
 data = np.rot90(data, -int(rotation / 90))
 \end{verbatim}\end{quote}

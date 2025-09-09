@@ -1,12 +1,12 @@
 \chapter{Introduction}
 
-\section{About This Manual}
-
 This observing manual describes the DDRAGO instrument on the COLIBRÍ telescope. 
 
-This first chapter contains an overview of the instrument and a description of its current state that should help you decide if DDRAGO is relevant for your science. The second chapter is a brief description of observations with DDRAGO and should help you plan your observations. The remaining chapters describe aspects of DDRAGO in more detail and may be useful during the analysis of data taken with DDRAGO, particularly if you reduce your own data rather than using one of the data pipelines.
+The second chapter contains a one-page overview of the instrument to help you to quickly decide if DDRAGO is relevant for your science. 
 
-As the instrument is still being commissioned, the information in this manual is necessarily incomplete.
+The third chapter is a brief description of observations with DDRAGO to help you plan your observations. It also describes the current state of the instrument and any unresolved problems in its performance.
+
+The remaining chapters describe aspects of DDRAGO in more detail and may be useful during the analysis of data taken with DDRAGO, particularly if you reduce your own data rather than using one of the data pipelines.
 
 The latest version of this manual is available at:
 
@@ -15,77 +15,3 @@ The latest version of this manual is available at:
 \end{quote}
 
 If you have comments on this manual, please send them to the authors at the addresses on the cover page.
-
-\section{Overview of DDRAGO}
-
-\begin{table}
-\centering
-\caption{An Overview of DDRAGO}
-\label{table:overview}
-\medskip
-\begin{tabularx}{\linewidth}{lX}
-\toprule
-Telescope&1.3-meter COLIBRÍ altitude-azimuth\\
-Longitude& 115.4646~{\deg} east\\
-Latitude&31.0449~{\deg} north\\
-Altitude& 2792 m\\
-Pointing Limits&1.0 to 73.4~{deg} in zenith distance\\
-Channels&Blue and red viewing the same field simultaneously\\
-Detectors&Two $4\mathrm{k}\times4\mathrm{k}$ deep-depleted CCDs\\
-Pixel Scale&0.38 arcsec\\
-Field&25.9 arcmin\\
-Blue filters&$g$, $r$, $i$, $gri$, and $B$\\
-Red filter&$z$, $y$, and $zy$\\
-Sensitivity&10$\sigma$ at $\AB \approx 20$ in 60 seconds in bright time\\
-Read Time&2.4 to 7.0 seconds, depending on binning and window\\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-DDRAGO is a two-channel optical imager for the 1.3-meter COLIBRÍ telescope at the Observatorio Astronómico Nacional. In a future upgrade, it will also deliver infrared light to the CAGIRE infrared camera. Table~\ref{table:overview} gives a brief overview of its most relevant parameters. See \cite{Langarica-2024} for a more detailed description of the instrument.
-
-The optical channels are referred to as the \emph{blue} and \emph{red} channels. They are separated by a dichroic at 815 nm. 
-
-The powered optics, consisting of a doublet at the entrance to the window and two field lenses just before the filter wheels, deliver $f/6.3$ beams to the focal planes of the blue and red channels.
-
-The instrument uses two deep-depleted, backside-illuminated e2v 231-84 CCDs. These detectors have a format of $4\mathrm{k}\times4\mathrm{k}$ with 15~{\micron} pixels. The nominal pixel scale is 0.38 \unit{arcsec/pixel} and the nominal field size is 25.9 \unit{arcmin}.
-
-The blue channel has filters that are very close to Pan-STARRS $g$, $r$, and $i$, a wide filter $gri$ that passes from the blue edge of $g$ to the red edge of $i$, and a $B$ filter.
-
-The red channel has filters that are very close to Pan-STARRS $z$ and $y$ and a wide filter $zy$ that passes from the blue edge of $z$ and thus is similar to SDSS $z$.
-
-\section{Current State of DDRAGO}
-
-The instrument was installed in November and December 2024 and is still being commissioned. The current state of the instrument and its associated systems is as follows:
-
-\begin{itemize}
-
-\item 
-The blue channel is operational and, except for the alignment issues mentioned below, works as expected. 
-
-\item 
-The red channel is not operational. 
-
-The CCD compressor was damaged during shipping to the observatory in November 2024 and will need to be repaired by the vendor. It is quite possible that the red channel will not be available before June 2025.
-
-\item 
-The telescope is operational and, except for the alignment issues mentioned below, works as expected. 
-
-\item
-We have not completed optical alignment of the telescope or the blue CCD. 
-
-Nevertheless, the instrument has given images with FWHM of 0.8 arcsec in the center of the field. The blue detector seems to be slightly tilted with respect to the focal plane, and the FWHM in our best images degrades to about 1.6 arcsec in the upper-left and lower-right corners of the full 26 arcmin field. 
-
-There is vignetting in the outer two arcmin of two corners of the field as the CCD is not yet centered on the optics.
-
-We have tentative plans to center and align the blue CCD in March 2025.
-
-\item
-The automatic data-processing pipeline is not yet available. It is quite possible that it will not be available before June 2025. 
-
-However, we have an engineering pipeline that is capable of stacking images and doing a simple sky subtraction. It requires some manual tuning (selecting a star for alignment and determining the fraction of frames to reject). It does not perform astrometric or photometric calibration or produce source catalogs. If you are interested in this pipeline, please contact Alan Watson <\href{mailto:alan@astro.unam.mx}{alan@astro.unam.mx}> directly.
-
-\item
-The scheduler is not yet fully integrated. Observations have to be programmed by hand, which limits flexibility and favors blocks that are simpler to program.
-
-\end{itemize}
