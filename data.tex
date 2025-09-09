@@ -56,14 +56,14 @@ For each record that begins with \verb|S| and refers to the start of the exposur
 
 \section{Downloading Data}
 
-Data are available from ratir.astrosen.unam.mx, an rsync server in Ensenada. We shortly hope to have a second server in Mexico City. The technical contact of each program will be provided with an account name and password for the server.
+Data are available from transients.astrosen.unam.mx, a server in Ensenada. We shortly hope to have a second server in Mexico City. The technical contact of each program will be provided with an account name and password for the server.
 
-We recommend reading the man page or a tutorial for rsync. Each program is assigned its own “module” in the terminology of rsync. 
+Data are distributed using \verb|rsync|. We recommend reading the man page or a tutorial for \verb|rsync|. Each program is assigned its own “module” in the terminology of \verb|rsync|. 
 
-We have noted deficiencies in the \verb|rsync| command in MacOS. We recommend either downloading data from a Linux machine or installing the Homebrew version of rsync (with the command \verb|brew install rsync|, assuming Homebrew is already installed) and then using \verb|/opt/homebrew/bin/rsync| instead of plain \verb|rsync|.
+We have noted deficiencies in the \verb|rsync| command in macOS. We recommend either downloading data from a Linux machine or installing the Homebrew version of rsync (with the command \verb|brew install rsync|, assuming Homebrew is already installed) and then using \verb|/opt/homebrew/bin/rsync| instead of plain \verb|rsync|.
 
 On the rsync server, files are organized in directories as follows:
-\begin{quote}
+\begin{quote}\footnotesize
 <date>/<program-identifier>/<block-identifier>/<visit-identifier>/
 \end{quote}
 

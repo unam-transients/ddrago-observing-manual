@@ -4,7 +4,7 @@ The instrument uses two Spectral Instruments 1110S CCD detector systems, each wi
 
 \section{Read Modes}
 
-The controller offers read frequencies of 1.01~MHz, 502.5~kHz, and 332.2~kHz, and low and high gain modes. Combinations of these are exposed by the instrument control system as “read modes”. 
+The hardware controller offers read frequencies of 1.01~MHz, 502.5~kHz, and 332.2~kHz, and low- and high gain modes. Combinations of these are exposed by the instrument control system as “read modes”. 
 
 The only read mode supported for science observations is read mode 0, which combines the  1.01~MHz read frequency and the low amplifier gain of about 2.23 electrons per DN. This combines fast readout of about 7 seconds, reasonable read noise of 6.5 electrons, and the deepest full-well of about 140,000 electrons \citep{laboratory}. 
 
@@ -36,7 +36,7 @@ The only read mode supported for science observations is read mode 0, which comb
 \end{center}
 \end{figure}
 
-The detector has a active area of  $4096~\mbox{columns} \times 4112~\mbox{rows}$. The controller reads it using the “split full frame read-out through four amplifiers” scheme \citep[p.~17]{e2v} with 50 columns of underscan at the start and end of each row, giving a total size of $4196~\mbox{columns} \times 4112~\mbox{rows}$ divided into four quadrants. This is shown in Figure~\ref{figure:format}.
+The detector has an active area of $4096~\mbox{columns} \times 4112~\mbox{rows}$. The controller reads it using the “split full frame read-out through four amplifiers” scheme \citep[p.~17]{e2v} with 50 columns of underscan at the start and end of each row, giving a total size of $4196~\mbox{columns} \times 4112~\mbox{rows}$ divided into four quadrants. This is shown in Figure~\ref{figure:format}.
 
 Each quadrant of the detector has slightly different bias level and gain, and this gives a clear pattern in raw exposures. However, subtracting the underscan level and residual bias and dividing by a flat field largely removes these differences.
 
@@ -158,7 +158,7 @@ We recommend a slightly non-standard approach to residual bias and dark correcti
 
 \section{Orientation on Sky}
 
-To simplify cable handling, the telescope derotator is only capable of rotating the DDRAGO instrument through $\pm65$ degrees. This means that we cannot maintain the same field orientation on the detector at all positions. However, we step the derotator offset in multiples of 90 degrees so that North is always approximately aligned with either the columns or rows. The value of the derotator offset is given in the SMTMRO record in the image header.
+To simplify cable handling, the telescope derotator is only capable of rotating the DDRAGO instrument through $\pm65$ degrees. This means that we cannot maintain the same field orientation on the detector at all positions. However, we step the derotator offset in multiples of 90 degrees so that North is always approximately aligned with either the columns or rows. The value of the derotator offset is given in the \verb|SMTMRO| record in the image header.
 
 If you wish to correct the orientation of raw data yourself, the engineering team recommends this code:
 \begin{quote}\footnotesize\begin{verbatim}
