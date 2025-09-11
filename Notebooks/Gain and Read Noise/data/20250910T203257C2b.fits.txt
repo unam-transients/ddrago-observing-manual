@@ -1,0 +1,774 @@
+SIMPLE  =                    T
+BITPIX  =                   16
+NAXIS   =                    2
+NAXIS1  =                 4192
+NAXIS2  =                 4096
+BSCALE  = 1.0
+BZERO   = 32768.0
+DATE    = '2025-09-10T20:32:57.740'
+MJD     = 60928.85622385
+TCSVRSN = ''
+DATE-OBS= '2025-09-10T20:32:57.738'
+MJD-OBS = 60928.85622382
+ORIGIN  = 'OAN/SPM'
+TELESCOP= 'OAN COLIBRI 1.3-m'
+INSTRUME= 'C2'
+ORIGNAME= '20250910T203257C2b.fits'
+EXPTIME = 0.0
+NFRM    =                    1
+EXPTYPE = 'bias'
+CCD_NAME= 'C2'
+BINNING = '1'
+READMODE= '0'
+SOFTGAIN= 1
+DATASAT = 65535
+WINSEC  = '[3:4194,9:4104]'
+CCDSEC  = '[49:4144,1:4096]'
+DATASEC = '[49:4144,1:4096]'
+BIASSEC = '[1:48,1:4096]'
+BSPIX1  = 2047.0                    / boresight
+BSPIX2  = 2041.0                    / boresight
+FILTER  = 'z'
+FWPS    = '0'
+DTDS    = 'SI 1110-185'
+FCDS    = 'null'
+NFW     =                    1
+FWDS1   = 'FLI CFW-14-5 (FW0031318)'
+FLTP    = 'alert'                   / executor filetype
+FLNM    = '20250910031610'          / executor filename
+BLKT    = '2025-09-10T12:02:00.996' / executor blocktimestamp
+VSTT    = '2025-09-10T12:02:00.980' / executor visittimestamp
+PRPID   =                 1000      / executor projectidentifier
+BLKID   =       20250910031610      / executor blockidentifier
+VSTID   =                    0      / executor visitidentifier
+PRPNM   = 'alerts'                  / executor projectname
+BLKNM   = 'SVOM 250910.166'         / executor blockname
+VSTNM   = 'SVOM 250910.166'         / executor visitname
+ALNM    = 'SVOM 250910.166'         / executor alertname
+ALOR    = 'svom'                    / executor alertorigin
+ALID    =       20250910031610      / executor alertidentifier
+ALSWID  = ''                        / executor alertswiftidentifier
+ALFRID  = ''                        / executor alertfermiidentifier
+ALLVID  = ''                        / executor alertlvcidentifier
+ALSVID  = '25091001'                / executor alertsvomidentifier
+ALTY    = 'svommxtinitialqfnumber'  / executor alerttype
+ALALT   = '2025-09-10T05:40:53.990' / executor alertalerttimestamp
+ALEVT   = '2025-09-10T04:00:23.023' / executor alerteventtimestamp
+ALRA    = 39.806916666666666        / executor alertalpha
+ALDE    = -39.653388888888884       / executor alertdelta
+ALEQ    = 2000                      / executor alertequinox
+ALUN    = 0.04666666666666667       / executor alertuncertainty
+ALPR    = '5'                       / executor alertpriority
+COMMENT Start of CCD section "S".
+SST     = 'ok'                      / C2 status
+SSTT    = '2025-08-29T22:31:00.055' / C2 statustimestamp
+SRQAC   = 'idle'                    / C2 requestedactivity
+SRQACT  = '2025-09-10T20:32:57.630' / C2 requestedactivitytimestamp
+SAC     = 'exposing'                / C2 activity
+SACT    = '2025-09-10T20:32:57.630' / C2 activitytimestamp
+ST      = '2025-09-10T20:32:57.739' / C2 timestamp
+SVRSN   = ''                        / C2 version
+SID     = 'C2'                      / C2 identifier
+SDTWD   = 0.44365333333333334       / C2 detectorwidth
+COMMENT no SDTFT value              / C2 detectorframetime
+SDTRM   = '0'                       / C2 detectorreadmode
+SDTSG   = 1                         / C2 detectorsoftwaregain
+SDTFDW  = 'sx 50 sy 0 nx 4096 ny 4112' / C2 detectorfullunbinneddatawindow
+SDTFBW  = 'sx 0 sy 0 nx 50 ny 4112' / C2 detectorfullunbinnedbiaswindow
+SDTUW   = 'sx 2 sy 8 nx 4192 ny 4096' / C2 detectorunbinnedwindow
+SDTBN   =                    1      / C2 detectorbinning
+SDTDW   = 'sx 48 sy 0 nx 4096 ny 4096' / C2 detectordatawindow
+SDTBW   = 'sx 0 sy 0 nx 48 ny 4096' / C2 detectorbiaswindow
+SDTTM   = -110.0                    / C2 detectordetectortemperature
+COMMENT no SHSTM value              / C2 detectorhousingtemperature
+SCLST   = 'on'                      / C2 detectorcoolerstate
+SCLTM   = -110.0                    / C2 detectorcoolersettemperature
+COMMENT no SCLPW value              / C2 detectorcoolerpower
+COMMENT no SSAAX value              / C2 detectorsaasigmax
+COMMENT no SSAAY value              / C2 detectorsaasigmay
+SFWPS   = '0'                       / C2 filterwheelposition
+SFWMX   = '4'                       / C2 filterwheelmaxposition
+SFL     = 'z'                       / C2 filter
+SFCPS   =                    0      / C2 focuserposition
+SFCMN   =                    0      / C2 focuserminposition
+SFCMX   =                    0      / C2 focusermaxposition
+SFCE    =                    0      / C2 focuserpositionerror
+COMMENT End of CCD section "S".
+COMMENT Start of TCS section "S".
+SDATE   = '2025-09-10T20:32:57.766' / date TCS section written
+SMJD    = 60928.85622414            / MJD TCS section written
+STRST   = 'ok'                      / target status
+STRSTT  = '2025-09-09T22:22:53.839' / target statustimestamp
+STRRQAC = 'idle'                    / target requestedactivity
+STRRQACT= '2025-09-10T12:15:20.043' / target requestedactivitytimestamp
+STRAC   = 'idle'                    / target activity
+STRACT  = '2025-09-10T12:15:20.045' / target activitytimestamp
+STRT    = '2025-09-10T20:32:57.684' / target timestamp
+STRVRSN = ''                        / target version
+STRLS   = 182.90327361049492        / target last
+COMMENT no STRRQRA value            / target requestedalpha
+STRRQHA = 0.0                       / target requestedha
+STRRQDE = 0.0                       / target requesteddelta
+COMMENT no STRRQEQ value            / target requestedequinox
+COMMENT no STRRQRAO value           / target requestedalphaoffset
+COMMENT no STRRQDEO value           / target requesteddeltaoffset
+COMMENT no STRRQEPT value           / target requestedepochtimestamp
+COMMENT no STRRQRAR value           / target requestedalpharate
+COMMENT no STRRQDER value           / target requesteddeltarate
+STRRQAP = 'default'                 / target requestedaperture
+COMMENT no STRAPRAO value           / target aperturealphaoffset
+COMMENT no STRAPDEO value           / target aperturedeltaoffset
+COMMENT no STRCURA value            / target currentalpha
+STRCUHA = 0.0                       / target currentha
+STRCUDE = 0.0                       / target currentdelta
+COMMENT no STRCUEQ value            / target currentequinox
+COMMENT no STRSTRA value            / target standardalpha
+COMMENT no STRSTDE value            / target standarddelta
+COMMENT no STRSTEQ value            / target standardequinox
+STROBRA = 182.90327361049492        / target observedalpha
+STROBHA = 0.0                       / target observedha
+STROBDE = 0.0                       / target observeddelta
+COMMENT no STROBRAR value           / target observedalpharate
+COMMENT no STROBHAR value           / target observedharate
+COMMENT no STROBDER value           / target observeddeltarate
+STROBAZ = 180.0                     / target observedazimuth
+STROBZ  = 31.044899999999995        / target observedzenithdistance
+STROBAM = 1.1667954866045795        / target observedairmass
+STRWL   =                    T      / target withinlimits
+SMNST   = 'ok'                      / moon status
+SMNSTT  = '2025-09-09T22:22:54.785' / moon statustimestamp
+SMNRQAC = 'idle'                    / moon requestedactivity
+SMNRQACT= '2025-09-09T22:22:54.770' / moon requestedactivitytimestamp
+SMNAC   = 'idle'                    / moon activity
+SMNACT  = '2025-09-09T22:22:54.785' / moon activitytimestamp
+SMNT    = '2025-09-10T20:32:57.430' / moon timestamp
+SMNVRSN = ''                        / moon version
+SMNRA   = 27.14915182384429         / moon observedalpha
+SMNHA   = 155.75306473210298        / moon observedha
+SMNDE   = 15.343638337441162        / moon observeddelta
+SMNAZ   = 329.789385771269          / moon observedazimuth
+SMNZD   = 128.08851587389088        / moon observedzenithdistance
+SMNIL   = 0.8748514271687371        / moon illuminatedfraction
+SMNSK   = 'dark'                    / moon skystate
+SMNTD   = 151.55566288684528        / moon observedtargetdistance
+SSNST   = 'ok'                      / sun status
+SSNSTT  = '2025-09-09T22:22:55.062' / sun statustimestamp
+SSNRQAC = 'idle'                    / sun requestedactivity
+SSNRQACT= '2025-09-09T22:22:55.062' / sun requestedactivitytimestamp
+SSNAC   = 'idle'                    / sun activity
+SSNACT  = '2025-09-09T22:22:55.075' / sun activitytimestamp
+SSNT    = '2025-09-10T20:32:57.171' / sun timestamp
+SSNVRSN = ''                        / sun version
+SSNRA   = 169.32248586530397        / sun observedalpha
+SSNHA   = 13.578640213675019        / sun observedha
+SSNDE   = 4.598329301279489         / sun observeddelta
+SSNAZ   = 208.50133834702294        / sun observedazimuth
+SSNZD   = 29.368986980339706        / sun observedzenithdistance
+SSNSK   = 'daylight'                / sun skystate
+SSNTD   = 14.321892913016553        / sun observedtargetdistance
+SSNSTDY = '2025-09-11T13:13:31.000' / sun startofday
+SSNENDY = '2025-09-11T02:03:44.000' / sun endofday
+SSNSTNG = '2025-09-11T03:30:40.000' / sun startofnight
+SSNENNG = '2025-09-11T11:46:27.000' / sun endofnight
+COMMENT no SSNMBC value             / sun mustbeclosed
+SMTST   = 'ok'                      / mount status
+SMTSTT  = '2025-09-09T22:22:57.210' / mount statustimestamp
+SMTRQAC = 'idle'                    / mount requestedactivity
+SMTRQACT= '2025-09-10T12:15:20.072' / mount requestedactivitytimestamp
+SMTAC   = 'idle'                    / mount activity
+SMTACT  = '2025-09-10T12:15:47.687' / mount activitytimestamp
+SMTT    = '2025-09-10T20:32:57.759' / mount timestamp
+SMTVRSN = ''                        / mount version
+COMMENT no SMTLS value              / mount mountlst
+COMMENT no SMTLSE value             / mount mountlsterror
+COMMENT no SMTTR value              / mount mounttracking
+SMTRORA = 182.90327361049492        / mount requestedobservedalpha
+SMTROHA = 0.0                       / mount requestedobservedha
+SMTRODE = 0.0                       / mount requestedobserveddelta
+COMMENT no SMTRORAR value           / mount requestedobservedalpharate
+COMMENT no SMTRODER value           / mount requestedobserveddeltarate
+COMMENT no SMTRMRA value            / mount requestedmountalpha
+COMMENT no SMTRMHA value            / mount requestedmountha
+COMMENT no SMTRMDE value            / mount requestedmountdelta
+COMMENT no SMTRMRAR value           / mount requestedmountalpharate
+COMMENT no SMTRMDER value           / mount requestedmountdeltarate
+SMTMRA  = 183.04998462287296        / mount mountalpha
+SMTMHA  = -0.14735013608628705      / mount mountha
+SMTMDE  = 20.94689186195853         / mount mountdelta
+COMMENT no SMTMRAE value            / mount mountalphaerror
+COMMENT no SMTMHAE value            / mount mounthaerror
+COMMENT no SMTMDEE value            / mount mountdeltaerror
+SMTMRO  = 90.0                      / mount mountrotation
+SMTMDR  = -34.14791107177733        / mount mountderotatorangle
+COMMENT no SMTMNETE value           / mount mountmeaneasttrackingerror
+COMMENT no SMTMNNTE value           / mount mountmeannorthtrackingerror
+COMMENT no SMTRMETE value           / mount mountrmseasttrackingerror
+COMMENT no SMTRMNTE value           / mount mountrmsnorthtrackingerror
+COMMENT no SMTPVETE value           / mount mountpveasttrackingerror
+COMMENT no SMTPVNTE value           / mount mountpvnorthtrackingerror
+COMMENT no SMTLCT value             / mount lastcorrectiontimestamp
+COMMENT no SMTLCRA value            / mount lastcorrectiondalpha
+COMMENT no SMTLCDE value            / mount lastcorrectionddelta
+COMMENT no SMTCKOF value            / mount mountclockutcoffset
+SSCST   = 'ok'                      / secondary status
+SSCSTT  = '2025-09-09T22:22:57.388' / secondary statustimestamp
+SSCRQAC = 'idle'                    / secondary requestedactivity
+SSCRQACT= '2025-09-10T12:15:10.346' / secondary requestedactivitytimestamp
+SSCAC   = 'idle'                    / secondary activity
+SSCACT  = '2025-09-10T12:15:11.947' / secondary activitytimestamp
+SSCT    = '2025-09-10T20:32:56.773' / secondary timestamp
+SSCVRSN = ''                        / secondary version
+SSCRQZ0 = 22060                     / secondary requestedz0
+SSCRQZ  = 22107                     / secondary requestedz
+SSCTS   = 'telescope-M1-rear-temperature' / secondary temperaturesensor
+SSCT    = +12.1                     / secondary temperature
+SSCDZT  = 0                         / secondary dztemperature
+SSCDZP  = 47                        / secondary dzposition
+SSCDZO  = 0                         / secondary dzoffset
+SSCDZF  = 0                         / secondary dzfilter
+SSCZ    = 22078                     / secondary z
+SSCZE   = -29                       / secondary zerror
+SSCZLL  =                    F      / secondary zlowerlimit
+SSCZUL  =                    F      / secondary zupperlimit
+COMMENT no SSCSPT value             / secondary stoppedtimestamp
+SSCSE   =                    F      / secondary settled
+SSCSET  = '2025-09-09T22:22:57.280' / secondary settledtimestamp
+SSEST   = 'ok'                      / sensors status
+SSESTT  = '2025-09-09T22:22:52.842' / sensors statustimestamp
+SSERQAC = 'idle'                    / sensors requestedactivity
+SSERQACT= '2025-09-09T22:22:52.828' / sensors requestedactivitytimestamp
+SSEAC   = 'idle'                    / sensors activity
+SSEACT  = '2025-09-09T22:22:52.828' / sensors activitytimestamp
+SSET    = '2025-09-10T20:32:56.641' / sensors timestamp
+SSEVRSN = ''                        / sensors version
+SSEWTTM = +17.5                     / sensors weather-temperature
+SSEWTTMT= '2025-09-10T20:31:18.000' / sensors weather-temperature-timestamp
+SSEC1TM = +17.5                     / sensors observing-room-comet1-temperature
+SSEC1TMT= '2025-09-10T20:32:17.000' / sensors observing-room-comet1-temperature-
+SSEC2TM = +17.6                     / sensors observing-room-comet2-temperature
+SSEC2TMT= '2025-09-10T20:32:17.000' / sensors observing-room-comet2-temperature-
+SSEOETM = +17.2                     / sensors ogse-external-temperature
+SSEOETMT= '2025-09-10T20:31:40.000' / sensors ogse-external-temperature-timestam
+SSEDETM = +18.6                     / sensors ddrago-external-temperature
+SSEDETMT= '2025-09-10T20:31:51.000' / sensors ddrago-external-temperature-timest
+SSEMRTM = +13.5                     / sensors telescope-M1-rear-temperature
+SSEMRTMT= '2025-09-10T20:32:17.000' / sensors telescope-M1-rear-temperature-time
+SSEMETM = +13.8                     / sensors telescope-M1-edge-temperature
+SSEMETMT= '2025-09-10T20:32:17.000' / sensors telescope-M1-edge-temperature-time
+SSEM2TM = +15.7                     / sensors telescope-M2-temperature
+SSEM2TMT= '2025-09-10T20:32:17.000' / sensors telescope-M2-temperature-timestamp
+SSEM3TM = +14.8                     / sensors telescope-M3-temperature
+SSEM3TMT= '2025-09-10T20:32:17.000' / sensors telescope-M3-temperature-timestamp
+SSES1TM = +17.7                     / sensors telescope-spider-1-temperature
+SSES1TMT= '2025-09-10T20:32:17.000' / sensors telescope-spider-1-temperature-tim
+SSES2TM = +17.5                     / sensors telescope-spider-2-temperature
+SSES2TMT= '2025-09-10T20:32:17.000' / sensors telescope-spider-2-temperature-tim
+SSEP1TM = +15.7                     / sensors telescope-pivot-box-1-temperature
+SSEP1TMT= '2025-09-10T20:32:17.000' / sensors telescope-pivot-box-1-temperature-
+SSEP2TM = +15.5                     / sensors telescope-pivot-box-2-temperature
+SSEP2TMT= '2025-09-10T20:32:17.000' / sensors telescope-pivot-box-2-temperature-
+SSER1TM = +20.2                     / sensors telescope-front-ring-1-temperature
+SSER1TMT= '2025-09-10T20:32:17.000' / sensors telescope-front-ring-1-temperature
+SSER2TM = +19.6                     / sensors telescope-front-ring-2-temperature
+SSER2TMT= '2025-09-10T20:32:17.000' / sensors telescope-front-ring-2-temperature
+SSEA1TM = +16.1                     / sensors telescope-fork-arm-1-temperature
+SSEA1TMT= '2025-09-10T20:32:17.000' / sensors telescope-fork-arm-1-temperature-t
+SSEA2TM = +16.1                     / sensors telescope-fork-arm-2-temperature
+SSEA2TMT= '2025-09-10T20:32:17.000' / sensors telescope-fork-arm-2-temperature-t
+SSEDCTM = +19.0                     / sensors ddrago-close-electronics-temperatu
+SSEDCTMT= '2025-09-10T20:31:50.000' / sensors ddrago-close-electronics-temperatu
+SSED3TM = +16.8                     / sensors ddrago-internal-es3-temperature
+SSED3TMT= '2025-09-10T20:31:46.000' / sensors ddrago-internal-es3-temperature-ti
+SSED4TM = +16.1                     / sensors ddrago-internal-es4-temperature
+SSED4TMT= '2025-09-10T20:31:44.000' / sensors ddrago-internal-es4-temperature-ti
+SSED5TM = +16.7                     / sensors ddrago-internal-es5-temperature
+SSED5TMT= '2025-09-10T20:31:41.000' / sensors ddrago-internal-es5-temperature-ti
+SSEDTTM = +16.1                     / sensors ddrago-external-tunnel-temperature
+SSEDTTMT= '2025-09-10T20:31:48.000' / sensors ddrago-external-tunnel-temperature
+SSECMTM = +15.1                     / sensors column-middle-temperature
+SSECMTMT= '2025-09-10T20:31:43.000' / sensors column-middle-temperature-timestam
+SSECBTM = +15.8                     / sensors column-bottom-temperature
+SSECBTMT= '2025-09-10T20:31:51.000' / sensors column-bottom-temperature-timestam
+SSECRTM = +19.6                     / sensors control-room-temperature
+SSECRTMT= '2025-09-10T20:31:47.000' / sensors control-room-temperature-timestamp
+SWTST   = 'ok'                      / weather status
+SWTSTT  = '2025-09-09T22:22:53.085' / weather statustimestamp
+SWTRQAC = 'idle'                    / weather requestedactivity
+SWTRQACT= '2025-09-09T22:22:52.776' / weather requestedactivitytimestamp
+SWTAC   = 'idle'                    / weather activity
+SWTACT  = '2025-09-09T22:22:52.776' / weather activitytimestamp
+SWTT    = '2025-09-10T20:32:15.000' / weather timestamp
+SWTVRSN = ''                        / weather version
+SWTTM   = +17.4                     / weather temperature
+SWTTMTR = 'falling'                 / weather temperaturetrend
+SWTDW   = -13.3                     / weather dewpoint
+SWTDWTR = 'rising'                  / weather dewpointtrend
+SWTDD   = +30.7                     / weather dewpointdepression
+SWTDDTR = 'falling'                 / weather dewpointdepressiontrend
+SWTHM   = 0.07400000000000001       / weather humidity
+SWTHMTR = 'rising'                  / weather humiditytrend
+SWTPR   = 729.2                     / weather pressure
+SWTPRTR = 'rising'                  / weather pressuretrend
+SWTWDAS = 14.76                     / weather windaveragespeed
+SWTWDGS = 27.720000000000002        / weather windgustspeed
+SWTWDAZ = 0.08881132767471024       / weather windaverageazimuth
+SWTWDLW = 246600.0                  / weather lowwindspeedseconds
+SWTRR   = 0.0                       / weather rainrate
+SWTHMAL =                    F      / weather humidityalarm
+SWTWDAL =                    F      / weather windalarm
+SWTRNAL =                    F      / weather rainalarm
+SWTMBC  =                    F      / weather mustbeclosed
+COMMENT End of TCS section "S".
+COMMENT Start of CCD section "E".
+EST     = 'ok'                      / C2 status
+ESTT    = '2025-08-29T22:31:00.055' / C2 statustimestamp
+ERQAC   = 'idle'                    / C2 requestedactivity
+ERQACT  = '2025-09-10T20:32:57.630' / C2 requestedactivitytimestamp
+EAC     = 'exposing'                / C2 activity
+EACT    = '2025-09-10T20:32:57.630' / C2 activitytimestamp
+ET      = '2025-09-10T20:32:58.108' / C2 timestamp
+EVRSN   = ''                        / C2 version
+EID     = 'C2'                      / C2 identifier
+EDTWD   = 0.44365333333333334       / C2 detectorwidth
+COMMENT no EDTFT value              / C2 detectorframetime
+EDTRM   = '0'                       / C2 detectorreadmode
+EDTSG   = 1                         / C2 detectorsoftwaregain
+EDTFDW  = 'sx 50 sy 0 nx 4096 ny 4112' / C2 detectorfullunbinneddatawindow
+EDTFBW  = 'sx 0 sy 0 nx 50 ny 4112' / C2 detectorfullunbinnedbiaswindow
+EDTUW   = 'sx 2 sy 8 nx 4192 ny 4096' / C2 detectorunbinnedwindow
+EDTBN   =                    1      / C2 detectorbinning
+EDTDW   = 'sx 48 sy 0 nx 4096 ny 4096' / C2 detectordatawindow
+EDTBW   = 'sx 0 sy 0 nx 48 ny 4096' / C2 detectorbiaswindow
+EDTTM   = -110.0                    / C2 detectordetectortemperature
+COMMENT no EHSTM value              / C2 detectorhousingtemperature
+ECLST   = 'on'                      / C2 detectorcoolerstate
+ECLTM   = -110.0                    / C2 detectorcoolersettemperature
+COMMENT no ECLPW value              / C2 detectorcoolerpower
+COMMENT no ESAAX value              / C2 detectorsaasigmax
+COMMENT no ESAAY value              / C2 detectorsaasigmay
+EFWPS   = '0'                       / C2 filterwheelposition
+EFWMX   = '4'                       / C2 filterwheelmaxposition
+EFL     = 'z'                       / C2 filter
+EFCPS   =                    0      / C2 focuserposition
+EFCMN   =                    0      / C2 focuserminposition
+EFCMX   =                    0      / C2 focusermaxposition
+EFCE    =                    0      / C2 focuserpositionerror
+COMMENT End of CCD section "E".
+COMMENT Start of TCS section "E".
+EDATE   = '2025-09-10T20:32:58.125' / date TCS section written
+EMJD    = 60928.85622830            / MJD TCS section written
+ETRST   = 'ok'                      / target status
+ETRSTT  = '2025-09-09T22:22:53.839' / target statustimestamp
+ETRRQAC = 'idle'                    / target requestedactivity
+ETRRQACT= '2025-09-10T12:15:20.043' / target requestedactivitytimestamp
+ETRAC   = 'idle'                    / target activity
+ETRACT  = '2025-09-10T12:15:20.045' / target activitytimestamp
+ETRT    = '2025-09-10T20:32:58.092' / target timestamp
+ETRVRSN = ''                        / target version
+ETRLS   = 182.90497408532835        / target last
+COMMENT no ETRRQRA value            / target requestedalpha
+ETRRQHA = 0.0                       / target requestedha
+ETRRQDE = 0.0                       / target requesteddelta
+COMMENT no ETRRQEQ value            / target requestedequinox
+COMMENT no ETRRQRAO value           / target requestedalphaoffset
+COMMENT no ETRRQDEO value           / target requesteddeltaoffset
+COMMENT no ETRRQEPT value           / target requestedepochtimestamp
+COMMENT no ETRRQRAR value           / target requestedalpharate
+COMMENT no ETRRQDER value           / target requesteddeltarate
+ETRRQAP = 'default'                 / target requestedaperture
+COMMENT no ETRAPRAO value           / target aperturealphaoffset
+COMMENT no ETRAPDEO value           / target aperturedeltaoffset
+COMMENT no ETRCURA value            / target currentalpha
+ETRCUHA = 0.0                       / target currentha
+ETRCUDE = 0.0                       / target currentdelta
+COMMENT no ETRCUEQ value            / target currentequinox
+COMMENT no ETRSTRA value            / target standardalpha
+COMMENT no ETRSTDE value            / target standarddelta
+COMMENT no ETRSTEQ value            / target standardequinox
+ETROBRA = 182.90497408532835        / target observedalpha
+ETROBHA = 0.0                       / target observedha
+ETROBDE = 0.0                       / target observeddelta
+COMMENT no ETROBRAR value           / target observedalpharate
+COMMENT no ETROBHAR value           / target observedharate
+COMMENT no ETROBDER value           / target observeddeltarate
+ETROBAZ = 180.0                     / target observedazimuth
+ETROBZ  = 31.044899999999995        / target observedzenithdistance
+ETROBAM = 1.1667954866045795        / target observedairmass
+ETRWL   =                    T      / target withinlimits
+EMNST   = 'ok'                      / moon status
+EMNSTT  = '2025-09-09T22:22:54.785' / moon statustimestamp
+EMNRQAC = 'idle'                    / moon requestedactivity
+EMNRQACT= '2025-09-09T22:22:54.770' / moon requestedactivitytimestamp
+EMNAC   = 'idle'                    / moon activity
+EMNACT  = '2025-09-09T22:22:54.785' / moon activitytimestamp
+EMNT    = '2025-09-10T20:32:57.430' / moon timestamp
+EMNVRSN = ''                        / moon version
+EMNRA   = 27.14915182384429         / moon observedalpha
+EMNHA   = 155.75306473210298        / moon observedha
+EMNDE   = 15.343638337441162        / moon observeddelta
+EMNAZ   = 329.789385771269          / moon observedazimuth
+EMNZD   = 128.08851587389088        / moon observedzenithdistance
+EMNIL   = 0.8748514271687371        / moon illuminatedfraction
+EMNSK   = 'dark'                    / moon skystate
+EMNTD   = 151.55566288684528        / moon observedtargetdistance
+ESNST   = 'ok'                      / sun status
+ESNSTT  = '2025-09-09T22:22:55.062' / sun statustimestamp
+ESNRQAC = 'idle'                    / sun requestedactivity
+ESNRQACT= '2025-09-09T22:22:55.062' / sun requestedactivitytimestamp
+ESNAC   = 'idle'                    / sun activity
+ESNACT  = '2025-09-09T22:22:55.075' / sun activitytimestamp
+ESNT    = '2025-09-10T20:32:57.171' / sun timestamp
+ESNVRSN = ''                        / sun version
+ESNRA   = 169.32248586530397        / sun observedalpha
+ESNHA   = 13.578640213675019        / sun observedha
+ESNDE   = 4.598329301279489         / sun observeddelta
+ESNAZ   = 208.50133834702294        / sun observedazimuth
+ESNZD   = 29.368986980339706        / sun observedzenithdistance
+ESNSK   = 'daylight'                / sun skystate
+ESNTD   = 14.321892913016553        / sun observedtargetdistance
+ESNSTDY = '2025-09-11T13:13:31.000' / sun startofday
+ESNENDY = '2025-09-11T02:03:44.000' / sun endofday
+ESNSTNG = '2025-09-11T03:30:40.000' / sun startofnight
+ESNENNG = '2025-09-11T11:46:27.000' / sun endofnight
+COMMENT no ESNMBC value             / sun mustbeclosed
+EMTST   = 'ok'                      / mount status
+EMTSTT  = '2025-09-09T22:22:57.210' / mount statustimestamp
+EMTRQAC = 'idle'                    / mount requestedactivity
+EMTRQACT= '2025-09-10T12:15:20.072' / mount requestedactivitytimestamp
+EMTAC   = 'idle'                    / mount activity
+EMTACT  = '2025-09-10T12:15:47.687' / mount activitytimestamp
+EMTT    = '2025-09-10T20:32:57.759' / mount timestamp
+EMTVRSN = ''                        / mount version
+COMMENT no EMTLS value              / mount mountlst
+COMMENT no EMTLSE value             / mount mountlsterror
+COMMENT no EMTTR value              / mount mounttracking
+EMTRORA = 182.90327361049492        / mount requestedobservedalpha
+EMTROHA = 0.0                       / mount requestedobservedha
+EMTRODE = 0.0                       / mount requestedobserveddelta
+COMMENT no EMTRORAR value           / mount requestedobservedalpharate
+COMMENT no EMTRODER value           / mount requestedobserveddeltarate
+COMMENT no EMTRMRA value            / mount requestedmountalpha
+COMMENT no EMTRMHA value            / mount requestedmountha
+COMMENT no EMTRMDE value            / mount requestedmountdelta
+COMMENT no EMTRMRAR value           / mount requestedmountalpharate
+COMMENT no EMTRMDER value           / mount requestedmountdeltarate
+EMTMRA  = 183.04998462287296        / mount mountalpha
+EMTMHA  = -0.14735013608628705      / mount mountha
+EMTMDE  = 20.94689186195853         / mount mountdelta
+COMMENT no EMTMRAE value            / mount mountalphaerror
+COMMENT no EMTMHAE value            / mount mounthaerror
+COMMENT no EMTMDEE value            / mount mountdeltaerror
+EMTMRO  = 90.0                      / mount mountrotation
+EMTMDR  = -34.14791107177733        / mount mountderotatorangle
+COMMENT no EMTMNETE value           / mount mountmeaneasttrackingerror
+COMMENT no EMTMNNTE value           / mount mountmeannorthtrackingerror
+COMMENT no EMTRMETE value           / mount mountrmseasttrackingerror
+COMMENT no EMTRMNTE value           / mount mountrmsnorthtrackingerror
+COMMENT no EMTPVETE value           / mount mountpveasttrackingerror
+COMMENT no EMTPVNTE value           / mount mountpvnorthtrackingerror
+COMMENT no EMTLCT value             / mount lastcorrectiontimestamp
+COMMENT no EMTLCRA value            / mount lastcorrectiondalpha
+COMMENT no EMTLCDE value            / mount lastcorrectionddelta
+COMMENT no EMTCKOF value            / mount mountclockutcoffset
+ESCST   = 'ok'                      / secondary status
+ESCSTT  = '2025-09-09T22:22:57.388' / secondary statustimestamp
+ESCRQAC = 'idle'                    / secondary requestedactivity
+ESCRQACT= '2025-09-10T12:15:10.346' / secondary requestedactivitytimestamp
+ESCAC   = 'idle'                    / secondary activity
+ESCACT  = '2025-09-10T12:15:11.947' / secondary activitytimestamp
+ESCT    = '2025-09-10T20:32:57.839' / secondary timestamp
+ESCVRSN = ''                        / secondary version
+ESCRQZ0 = 22060                     / secondary requestedz0
+ESCRQZ  = 22107                     / secondary requestedz
+ESCTS   = 'telescope-M1-rear-temperature' / secondary temperaturesensor
+ESCT    = +12.1                     / secondary temperature
+ESCDZT  = 0                         / secondary dztemperature
+ESCDZP  = 47                        / secondary dzposition
+ESCDZO  = 0                         / secondary dzoffset
+ESCDZF  = 0                         / secondary dzfilter
+ESCZ    = 22078                     / secondary z
+ESCZE   = -29                       / secondary zerror
+ESCZLL  =                    F      / secondary zlowerlimit
+ESCZUL  =                    F      / secondary zupperlimit
+COMMENT no ESCSPT value             / secondary stoppedtimestamp
+ESCSE   =                    F      / secondary settled
+ESCSET  = '2025-09-09T22:22:57.280' / secondary settledtimestamp
+ESEST   = 'ok'                      / sensors status
+ESESTT  = '2025-09-09T22:22:52.842' / sensors statustimestamp
+ESERQAC = 'idle'                    / sensors requestedactivity
+ESERQACT= '2025-09-09T22:22:52.828' / sensors requestedactivitytimestamp
+ESEAC   = 'idle'                    / sensors activity
+ESEACT  = '2025-09-09T22:22:52.828' / sensors activitytimestamp
+ESET    = '2025-09-10T20:32:56.641' / sensors timestamp
+ESEVRSN = ''                        / sensors version
+ESEWTTM = +17.5                     / sensors weather-temperature
+ESEWTTMT= '2025-09-10T20:31:18.000' / sensors weather-temperature-timestamp
+ESEC1TM = +17.5                     / sensors observing-room-comet1-temperature
+ESEC1TMT= '2025-09-10T20:32:17.000' / sensors observing-room-comet1-temperature-
+ESEC2TM = +17.6                     / sensors observing-room-comet2-temperature
+ESEC2TMT= '2025-09-10T20:32:17.000' / sensors observing-room-comet2-temperature-
+ESEOETM = +17.2                     / sensors ogse-external-temperature
+ESEOETMT= '2025-09-10T20:31:40.000' / sensors ogse-external-temperature-timestam
+ESEDETM = +18.6                     / sensors ddrago-external-temperature
+ESEDETMT= '2025-09-10T20:31:51.000' / sensors ddrago-external-temperature-timest
+ESEMRTM = +13.5                     / sensors telescope-M1-rear-temperature
+ESEMRTMT= '2025-09-10T20:32:17.000' / sensors telescope-M1-rear-temperature-time
+ESEMETM = +13.8                     / sensors telescope-M1-edge-temperature
+ESEMETMT= '2025-09-10T20:32:17.000' / sensors telescope-M1-edge-temperature-time
+ESEM2TM = +15.7                     / sensors telescope-M2-temperature
+ESEM2TMT= '2025-09-10T20:32:17.000' / sensors telescope-M2-temperature-timestamp
+ESEM3TM = +14.8                     / sensors telescope-M3-temperature
+ESEM3TMT= '2025-09-10T20:32:17.000' / sensors telescope-M3-temperature-timestamp
+ESES1TM = +17.7                     / sensors telescope-spider-1-temperature
+ESES1TMT= '2025-09-10T20:32:17.000' / sensors telescope-spider-1-temperature-tim
+ESES2TM = +17.5                     / sensors telescope-spider-2-temperature
+ESES2TMT= '2025-09-10T20:32:17.000' / sensors telescope-spider-2-temperature-tim
+ESEP1TM = +15.7                     / sensors telescope-pivot-box-1-temperature
+ESEP1TMT= '2025-09-10T20:32:17.000' / sensors telescope-pivot-box-1-temperature-
+ESEP2TM = +15.5                     / sensors telescope-pivot-box-2-temperature
+ESEP2TMT= '2025-09-10T20:32:17.000' / sensors telescope-pivot-box-2-temperature-
+ESER1TM = +20.2                     / sensors telescope-front-ring-1-temperature
+ESER1TMT= '2025-09-10T20:32:17.000' / sensors telescope-front-ring-1-temperature
+ESER2TM = +19.6                     / sensors telescope-front-ring-2-temperature
+ESER2TMT= '2025-09-10T20:32:17.000' / sensors telescope-front-ring-2-temperature
+ESEA1TM = +16.1                     / sensors telescope-fork-arm-1-temperature
+ESEA1TMT= '2025-09-10T20:32:17.000' / sensors telescope-fork-arm-1-temperature-t
+ESEA2TM = +16.1                     / sensors telescope-fork-arm-2-temperature
+ESEA2TMT= '2025-09-10T20:32:17.000' / sensors telescope-fork-arm-2-temperature-t
+ESEDCTM = +19.0                     / sensors ddrago-close-electronics-temperatu
+ESEDCTMT= '2025-09-10T20:31:50.000' / sensors ddrago-close-electronics-temperatu
+ESED3TM = +16.8                     / sensors ddrago-internal-es3-temperature
+ESED3TMT= '2025-09-10T20:31:46.000' / sensors ddrago-internal-es3-temperature-ti
+ESED4TM = +16.1                     / sensors ddrago-internal-es4-temperature
+ESED4TMT= '2025-09-10T20:31:44.000' / sensors ddrago-internal-es4-temperature-ti
+ESED5TM = +16.7                     / sensors ddrago-internal-es5-temperature
+ESED5TMT= '2025-09-10T20:31:41.000' / sensors ddrago-internal-es5-temperature-ti
+ESEDTTM = +16.1                     / sensors ddrago-external-tunnel-temperature
+ESEDTTMT= '2025-09-10T20:31:48.000' / sensors ddrago-external-tunnel-temperature
+ESECMTM = +15.1                     / sensors column-middle-temperature
+ESECMTMT= '2025-09-10T20:31:43.000' / sensors column-middle-temperature-timestam
+ESECBTM = +15.8                     / sensors column-bottom-temperature
+ESECBTMT= '2025-09-10T20:31:51.000' / sensors column-bottom-temperature-timestam
+ESECRTM = +19.6                     / sensors control-room-temperature
+ESECRTMT= '2025-09-10T20:31:47.000' / sensors control-room-temperature-timestamp
+EWTST   = 'ok'                      / weather status
+EWTSTT  = '2025-09-09T22:22:53.085' / weather statustimestamp
+EWTRQAC = 'idle'                    / weather requestedactivity
+EWTRQACT= '2025-09-09T22:22:52.776' / weather requestedactivitytimestamp
+EWTAC   = 'idle'                    / weather activity
+EWTACT  = '2025-09-09T22:22:52.776' / weather activitytimestamp
+EWTT    = '2025-09-10T20:32:15.000' / weather timestamp
+EWTVRSN = ''                        / weather version
+EWTTM   = +17.4                     / weather temperature
+EWTTMTR = 'falling'                 / weather temperaturetrend
+EWTDW   = -13.3                     / weather dewpoint
+EWTDWTR = 'rising'                  / weather dewpointtrend
+EWTDD   = +30.7                     / weather dewpointdepression
+EWTDDTR = 'falling'                 / weather dewpointdepressiontrend
+EWTHM   = 0.07400000000000001       / weather humidity
+EWTHMTR = 'rising'                  / weather humiditytrend
+EWTPR   = 729.2                     / weather pressure
+EWTPRTR = 'rising'                  / weather pressuretrend
+EWTWDAS = 14.76                     / weather windaveragespeed
+EWTWDGS = 27.720000000000002        / weather windgustspeed
+EWTWDAZ = 0.08881132767471024       / weather windaverageazimuth
+EWTWDLW = 246600.0                  / weather lowwindspeedseconds
+EWTRR   = 0.0                       / weather rainrate
+EWTHMAL =                    F      / weather humidityalarm
+EWTWDAL =                    F      / weather windalarm
+EWTRNAL =                    F      / weather rainalarm
+EWTMBC  =                    F      / weather mustbeclosed
+COMMENT End of TCS section "E".
+COMMENT Start of SI Image section.
+N_PRM0  =                   59 / Status
+PG0_0   =                24608 / Camera Flags,
+PG0_1   =          1100081.865 / Camera Up Time, HH:MM:SS.sss
+PG0_2   =                    0 / Continuous Clear Mode,
+PG0_3   =                3.090 / Frame Clear Time, HH:MM:SS.sss
+PG0_4   =                3.090 / CCD Read Time, HH:MM:SS.sss
+PG0_5   =                3.362 / Cryo Current, Amps
+PG0_6   =                0.000 / Cryo Delay, HH:MM:SS.sss
+PG0_7   =                19455 / PS Flags,
+PG0_8   =                   22 / PS Pressure 1, PSI
+PG0_9   =                  237 / PS Pressure 2, PSI
+PG0_10  =                 39.7 / PS CPU Temp, C
+PG0_11  =                   74 / PS Fan 0 Speed, Hz
+PG0_12  =                   74 / PS Fan 1 Speed, Hz
+PG0_13  =                   76 / PS Fan 2 Speed, Hz
+PG0_14  =                   75 / PS Fan 3 Speed, Hz
+PG0_15  =                 36.2 / PS Case Temp, C
+PG0_16  =                3.506 / PS 3.3V Supply, Volts
+PG0_17  =               14.977 / PS 12V Supply, Volts
+PG0_18  =               14.977 / PS Sensor Supply, Volts
+PG0_19  =               24.226 / PS 24V Supply, Volts
+PG0_20  =               49.038 / PS 48V Supply, Volts
+PG0_21  =              -13.164 / Camera Switched -13V, Volts
+PG0_22  =               -6.643 / Camera Switched -6V, Volts
+PG0_23  =                6.509 / Camera Switched 5V, Volts
+PG0_24  =                6.551 / Camera Switched 6V, Volts
+PG0_25  =               13.220 / Camera Switched 13V, Volts
+PG0_26  =               24.041 / Camera Switched 24V, Volts
+PG0_27  =               30.968 / Camera Switched 28V, Volts
+PG0_28  =           2147483647 / PS Software Rel.,
+PG0_29  =                7.965 / SW+, Volts
+PG0_30  =                2.031 / SW-, Volts
+PG0_31  =               11.907 / R+, Volts
+PG0_32  =                0.045 / R-, Volts
+PG0_33  =               29.013 / VDD, Volts
+PG0_34  =               16.902 / VRD, Volts
+PG0_35  =                2.480 / VLG1, Volts
+PG0_36  =                0.029 / VLG2, Volts
+PG0_37  =              -13.016 / -13V, Volts
+PG0_38  =               -6.290 / -6V, Volts
+PG0_39  =               -4.804 / -5V Pre., Volts
+PG0_40  =                1.220 / 1.2V, Volts
+PG0_41  =                3.522 / 3.3V, Volts
+PG0_42  =                3.297 / VREF_P, Volts
+PG0_43  =                5.049 / +5V, Volts
+PG0_44  =                4.998 / +5V Pre., Volts
+PG0_45  =                5.970 / +6V, Volts
+PG0_46  =               13.285 / +13V, Volts
+PG0_47  =               23.993 / +24V, Volts
+PG0_48  =               31.481 / +28V, Volts
+PG0_49  =                0.002 / Chamber Pressure, Torr
+PG0_50  =                 34.9 / CPU Temperature, C
+PG0_51  =               -129.4 / Cold End Temperature, C
+PG0_52  =               -110.0 / CCD 0 CCD Temp., C
+PG0_53  =               23.524 / CCD Heater+, Volts
+PG0_54  =                0.328 / CCD Heater Current, Amps
+PG0_55  =               23.979 / Cold End Heater+, Volts
+PG0_56  =                0.005 / Cold End Heater Current, Amps
+PG0_57  =               23.919 / Window Heater+, Volts
+PG0_58  =                    0 / HKS Flags,
+N_PRM1  =                   10 / Miscellaneous
+PG1_0   =                    1 / Tested Speeds, (Not Defined)
+PG1_1   = 'e2V CCD231-84'      / CCD Model
+PG1_2   = '19232-03-01'        / CCD 0 SN
+PG1_3   =                 8811 / Hardware Part Number,
+PG1_4   =                    0 / Hardware Revision,
+PG1_5   =                -69.8 / Operational Temp, C
+PG1_6   =                0.150 / Operational Pressure, Torr
+PG1_7   =            61.440000 / Image Area Size X, mm
+PG1_8   =            61.600000 / Image Area Size Y, mm
+PG1_9   =                2.000 / Frame Clear Time, Sec.
+N_PRM2  =                   26 / Setup
+PG2_0   =               60.000 / Exposure Time, Sec.
+PG2_1   =                  150 / TDI Delay, 200 ns
+PG2_2   =                    0 / Acquisition mode, (Video)
+PG2_3   =                    1 / Frame Count,
+PG2_4   =                    2 / Trigger Mode, (Timed Exposure After Trig.)
+PG2_5   =                    0 / Initial Clear Mode, (Enable)
+PG2_6   =                    0 / Initial Cooler State, (Off)
+PG2_7   =                    0 / Initial Window Heat,
+PG2_8   =               -110.0 / CCD Temperature Setpoint, C
+PG2_9   =               -130.0 / Cold End Temperature Setpoint, C
+PG2_10  =               -130.0 / Low Flow Begins, C
+PG2_11  =               -129.0 / Low Flow Ends, C
+PG2_12  =                    0 / Trigger 1 In Setup, (Opto)
+PG2_13  =                    1 / Trigger 1 Out Setup, (CMOS)
+PG2_14  =                    0 / Trigger 1 Out Selector, (Shutter)
+PG2_15  =                    0 / Trigger 2 In Setup, (Opto)
+PG2_16  =                    0 / Trigger 2 Out Setup, (Opto)
+PG2_17  =                    2 / Trigger 2 Out Selector, (Frame)
+PG2_18  =                    0 / Trigger Input Select, (1)
+PG2_19  =                0.000 / Shutter Open Delay, Sec.
+PG2_20  =                0.070 / Shutter Close Delay, Sec.
+PG2_21  =                    2 / Parallel Shift Delay, 200 ns
+PG2_22  =                    1 / Parallel Clear Count,
+PG2_23  =                 2149 / Serial Clear Count,
+PG2_24  =                    0 / Pre-exposure pulse select, (Short)
+PG2_25  =                    1 / LED Operation, (Enable)
+N_PRM3  =                    1 / Mode Mask
+PG3_0   =                   63 / Mode Mask,
+N_PRM4  =                   62 / Factory
+PG4_0   =                 1110 / Instrument Model,
+PG4_1   =                  185 / Instrument SN,
+PG4_2   =                   50 / Line Strobe Fall Delay, 10 ns
+PG4_3   =                    0 / Pixel Pipeline,
+PG4_4   =                    0 / VDD off, (Disable)
+PG4_5   =                    0 / Clear During Exposure, (Disable)
+PG4_6   =                0.100 / Long Pre-exposure pulse duration, Sec.
+PG4_7   =                0.001 / Pre-exposure pulse duration, Sec.
+PG4_8   =                    1 / Pre-exposure pulse enable, (Enable)
+PG4_9   =               -18593 / Offset DAC Numerator,
+PG4_10  =               -42967 / Offset DAC Offset,
+PG4_11  =                    0 / Camera De-interlace, (Software)
+PG4_12  =                    0 / SREG 0 De-interlace Position,
+PG4_13  =                    1 / SREG 1 De-interlace Position,
+PG4_14  =                    0 / CCD Type, (Full-Frame)
+PG4_15  =                    4 / Parallel Clock Regions,
+PG4_16  =                    1 / ADC Clock Divisor, (1)
+PG4_17  =                   10 / Analog Chain Delay, ADC Clocks
+PG4_18  =                    0 / Parallel Pre-Masked,
+PG4_19  =                 4112 / Parallel Active Pix.,
+PG4_20  =                    0 / Parallel Post-Masked,
+PG4_21  =                    0 / Parallel Region 0 Masked, (False)
+PG4_22  =                    2 / Parallel Region 0 Shift Cap., (Both)
+PG4_23  =                    0 / Parallel Region 1 Masked, (False)
+PG4_24  =                    2 / Parallel Region 1 Shift Cap., (Both)
+PG4_25  =                    0 / Parallel Region 2 Masked, (False)
+PG4_26  =                    2 / Parallel Region 2 Shift Cap., (Both)
+PG4_27  =                    0 / Parallel Region 3 Masked, (False)
+PG4_28  =                    2 / Parallel Region 3 Shift Cap., (Both)
+PG4_29  =                    1 / Two Serial Registers, (True)
+PG4_30  =                   50 / Serial Pre-Masked,
+PG4_31  =                 4096 / Serial Active Pix.,
+PG4_32  =                    0 / Serial Post-Masked,
+PG4_33  =                    4 / Installed Ports, (4)
+PG4_34  =                38782 / Allowed Port Select,
+PG4_35  =                5.100 / PS +5V Setting, Volts
+PG4_36  =                6.000 / PS +6V Setting, Volts
+PG4_37  =               -6.300 / PS -6V Setting, Volts
+PG4_38  =               13.200 / PS +13V Setting, Volts
+PG4_39  =               24.500 / PS +24V Setting, Volts
+PG4_40  =               31.500 / PS +28V Setting, Volts
+PG4_41  =              -13.000 / PS -13V Setting, Volts
+PG4_42  =                    0 / Port 0 Connect, (SR0)
+PG4_43  =                    0 / Port 0 Map, (ADC0)
+PG4_44  =                    0 / Port 0 Shift Direction, (Same)
+PG4_45  =                 1024 / CCD 0 Port 0 Gain Correction,
+PG4_46  =                 1024 / CCD 0 Port 0 HG Correction,
+PG4_47  =                    0 / Port 1 Connect, (SR0)
+PG4_48  =                    1 / Port 1 Map, (ADC1)
+PG4_49  =                    1 / Port 1 Shift Direction, (Reverse)
+PG4_50  =                 1036 / CCD 0 Port 1 Gain Correction,
+PG4_51  =                 1036 / CCD 0 Port 1 HG Correction,
+PG4_52  =                    1 / Port 2 Connect, (SR1)
+PG4_53  =                    2 / Port 2 Map, (ADC2)
+PG4_54  =                    0 / Port 2 Shift Direction, (Same)
+PG4_55  =                 1024 / CCD 0 Port 2 Gain Correction,
+PG4_56  =                 1024 / CCD 0 Port 2 HG Correction,
+PG4_57  =                    1 / Port 3 Connect, (SR1)
+PG4_58  =                    3 / Port 3 Map, (ADC3)
+PG4_59  =                    1 / Port 3 Shift Direction, (Reverse)
+PG4_60  =                 1024 / CCD 0 Port 3 Gain Correction,
+PG4_61  =                 1024 / CCD 0 Port 3 HG Correction,
+N_PRM5  =                   24 / Control
+PG5_0   =                    0 / CCD Operation, (Full-Frame)
+PG5_1   =                   16 / Bits Per Pixel, (16)
+PG5_2   =                   17 / DSI Sample Time,
+PG5_3   =                    0 / Gain, (Normal)
+PG5_4   =                    0 / Digital Gain, (1)
+PG5_5   =                   15 / Port Select, (All)
+PG5_6   =                    1 / Parallel Binning,
+PG5_7   =                 2048 / Parallel Length,
+PG5_8   =                    8 / Parallel Origin,
+PG5_9   =                    2 / Parallel Phasing, (Split)
+PG5_10  =                    0 / Parallel Post Scan,
+PG5_11  =                    1 / Serial Binning,
+PG5_12  =                 2096 / Serial Length,
+PG5_13  =                    2 / Serial Origin,
+PG5_14  =                    2 / Serial Phasing, (Split)
+PG5_15  =                    0 / Serial Post Scan,
+PG5_16  =               -1.830 / CCD 0 Port 0 ADC Offset, Volts
+PG5_17  =                 2032 / CCD 0 Port 0 Correlation Bias,
+PG5_18  =               -1.868 / CCD 0 Port 1 ADC Offset, Volts
+PG5_19  =                 2046 / CCD 0 Port 1 Correlation Bias,
+PG5_20  =               -1.818 / CCD 0 Port 2 ADC Offset, Volts
+PG5_21  =                 2066 / CCD 0 Port 2 Correlation Bias,
+PG5_22  =               -1.843 / CCD 0 Port 3 ADC Offset, Volts
+PG5_23  =                 2015 / CCD 0 Port 3 Correlation Bias,
+N_PRM6  =                    1 / Operational
+PG6_0   =                    0 / Mode,
+COMMENT  Dark, Exp Time= 01:00, Saved as:
+COMMENT End of SI Image section.
