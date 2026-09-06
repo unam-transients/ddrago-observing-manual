@@ -1,0 +1,84 @@
+\chapter{Observing}
+\label{chapter:observing}
+
+\section{Authorship of Publications}
+
+For publications resulting from Mexican or French time, there is no requirement to include members of the TEQUILA instrument team or the COLIBRÍ science operations team as authors on any publication that results from these observations. However, if you consider that someone has been especially helpful, you might consider thanking them in the acknowledgments.
+
+For publications resulting from COLIBRÍ Transient Program time, the authorship requirements are given in the COLIBRÍ Science Management Plan (SMP).
+
+\section{Acknowledgements in Publications}
+
+In all publications that make use of data acquired with DDRAGO, you must:
+\begin{enumerate}
+    \item Mention COLIBRÍ in the abstract.
+    \item Cite these papers on the  instrument and telescope at an appropriate point:
+
+        \begin{itemize}
+            \item \cite{Basa-2022}
+            \item \cite{Langarica-2024}
+        \end{itemize}
+
+    \item Include this text in the acknowledgments:
+
+        \begin{quote}\sloppy
+            The data [or some of the data] used in this paper were acquired with the DDRAGO instrument on the COLIBRÍ telescope at the Observatorio Astronómico Nacional on the Sierra de San Pedro Mártir.
+
+            COLIBRÍ and DDRAGO are funded by the Universidad Nacional Autónoma de México (CIC and DGAPA/PAPIIT IN109418 and IN109224) and CONAHCyT/SECIHTI (1046632 and 277901). COLIBRI received financial support from the French government under the France 2030 investment plan, as part of the Initiative d’Excellence d’Aix-Marseille Université-A*MIDEX  (ANR-11-LABX-0060 -- OCEVU and AMX-19-IET-008 -- IPhU), from LabEx FOCUS (ANR-11-LABX-0013), from the CSAA-INSU-CNRS support program. COLIBRÍ has also been funded by CNRS and UNAM/CIC through the International Research Program ERIDANUS.
+            COLIBRÍ and DDRAGO are operated and maintained by the Observatorio Astronómico Nacional and the Instituto de Astronomía of the Universidad Nacional Autónoma de México.
+        \end{quote}
+
+\end{enumerate}
+
+\section{Phase 1}
+\label{section:phase-1}
+
+This section contains information likely to be useful in phase 1 of the observing process: requesting observing time.
+
+\subsection{Mexican Phase 1}
+
+The Mexican astronomical community receives 32.5\% of the time on COLIBRÍ. The process for applying for this time is managed by the Jefatura de Astronomía Observacional of the Instituto de Astronomía and the Comisión de Asignación de Tiempo de Telescopio. For more information, see:
+
+\begin{quote}
+    \url{https://jao.astrosen.unam.mx/}
+\end{quote}
+
+\subsection{French Phase 1}
+
+The French astronomical community receives 22.5\% of the time on COLIBRÍ. Contact the PI of COLIBRÍ (Stéphane Basa \href{mailto:sbasa@lam.fr}{stephane.basa@lam.fr}) for information on how to apply for this time.
+
+\subsection{Planning Observation}
+
+We do recommend dithering with each single exposures of more than 60 seconds. For more sensitivity, we recommend taking multiple exposures each of 60 seconds or less. We offer random dithering within a circle and dithering on a grid with up to points per grid. The default size of the dither pattern is 1.0 arcmin diameter or 1.0 arcmin square, but this can be adjusted for each observation.
+
+To account for overheads, conservatively, you should allow:
+\begin{itemize}
+    \item 5 second for readout
+    \item 10 seconds for dithering
+    \item 30 seconds for the initial pointing
+    \item 25 seconds to switch between DDRAGO and TEQUILA.
+\end{itemize}
+
+We routinely take flat field, bias, and dark images. We do not routinely observe photometric standards, but instead calibrate from local Pan-STARRS and SkyMapper observations.
+
+\subsection{Observing Blocks}
+
+Approved observing programs are split into \emph{observing blocks}. We aim to keep individual observing blocks to no more than about 30 minutes of real time (i.e., $24 \times 60$-second exposures plus overheads). If more data are required, we recommend repeating blocks.
+
+For each observing block, the COLIBRÍ science operations team will require the following information:
+
+\begin{itemize}
+    \item Target name. This is strictly optional, but we find it useful.
+    \item Program number. This will be assigned to each approved program by the science operations team.
+    \item Target number. We recommend using a distinct target number for each target.
+    \item Visit number (default 0). Data files are organized into directories based on the date or observation, program number, block number, and visit number, so the visit number can be used to separate data taken on the same target at different times on the same night.
+    \item Pointing J2000 coordinates. This will normally be the coordinates of the science target, but it can be offset when you wish to include both the science target and a local standard in the $3.3 \times 3.3$ arcmin common field of view.
+    \item The filters you wish to use. For each filter, the number of exposures and the individual exposure time.
+    \item If you want to use random dithers, the dither circle diameter (default is 1.0 arcmin diameter). If you want to dither on a grid, the number of grid points (up to 9) and the size of the grid (default is 1.0 arcmin to a size).
+    \item Constraints on airmass (by default airmass less than 2), hour angle, and date.
+    \item Whether the block should be run once, multiple times, or repeatedly (i.e., every second night).
+\end{itemize}
+
+Once the COLIBRÍ science operations team has this information, they will program and execute your blocks.
+
+It is possible to program TEQUILA and DDRAGO observing visits in the same observing blocks, obtaining simultaneous or nearly simultaneous $r$-band polarimetry with TEQUILA and $grizy$-band photometry with DDRAGO. The photometry obtained with DDRAGO can be used to assist in the photometric calibration of the TEQUILA observations.

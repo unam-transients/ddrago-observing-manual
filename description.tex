@@ -1,0 +1,80 @@
+\chapter{Description}
+\label{chapter:description}
+
+\section{Overview}
+
+DDRAGO is a two-channel optical imager for the 1.3-meter COLIBRÍ telescope at the Observatorio Astronómico Nacional.
+
+Each channel has a $4\mathrm{k}\times4\mathrm{k}$ CCD. The pixel scale is 0.38 \unit{arcsec/pixel} and the field size is 25.9 \unit{arcmin}.
+The blue channel has filters that are very close to Pan-STARRS $g$, $r$, and $i$, a wide filter $gri$ that passes from the blue edge of $g$ to the red edge of $i$, and a $B$ filter.
+The red channel has filters that are very close to Pan-STARRS $z$ and $y$ and a wide filter $zy$ that passes from the blue edge of $z$ and thus is similar to SDSS $z$.
+
+The 10$\sigma$ sensitivity is typically $\AB \approx 20$ in 60 seconds in bright time.
+
+The read time is 2.4 to 7.0 seconds, depending on binning and window.
+
+The telescope is located at 115.4646~{\deg} east and 31.0449~{\deg} north, and at an altitude of 2792 meters.
+
+The telescope has an altitude-azimuth mount and can point anywhere above a zenith distance limit of 73.4~{\deg}, which corresponds to an airmass of 3.5. However, the telescope cannot currently track well within 10~{\deg} of the zenith.
+
+\cite{Langarica-2024} provides more information on the instrument and \cite{Basa-2022} provides more information on the telescope and observatory.
+
+\section{Current State}
+
+The instrument and telescope are currently working as expected, with three exceptions.
+
+We see halos around bright stars in images in the $g$, $gri$, and $B$ filters. The halos have a radius of about 15 arcsec and contain about 0.3\% of the light of the star. We believe these are caused by an internal reflection in the window of the detector. These reflections appear in the blue filters because the anti-reflection coatings of the windows are optimized for 480 to 1000~nm.
+
+We have not completed optical alignment of the telescope. As a result of this, we see field-depended comma in both detectors. Nevertheless, the instrument has given images with FWHM of 0.8 arcsec in the center of the field, but the FWHM is worse away from the field center.
+
+The telescope tracking is not as good as we anticipated; although short exposures often have a FWHM of less than 1.0 arcsec, exposures of sixty seconds typically have a FWHM of about 1.2 arcsec.
+
+\section{Previous Problems}
+
+% The red CCD was initially rotated too, but we took no science data with it. The rotation was fixed before the CCD was reinstalled in August 2025.
+
+The instrument was installed in November 2024 with the red filter wheel slightly rotated with respect to the red CCD. This caused vignetting along the edges of the CCD. The filter wheel was installed in the correct orientation on 18 September 2025.
+
+\section{Dithering}
+
+For point sources we normally dither in a square or circle of size 1.0 arcmin.
+Dithering is generally recommended when the observing methodology permits it, as it allows the construction of a background and reduces small-scale flat-field errors.
+
+\section{Sensitivity}
+
+A simple exposure-time estimator is available here:
+
+\begin{quote}
+    \url{https://github.com/unam-transients/ddrago-observing-manual/blob/main/ETE.md}
+\end{quote}
+
+The estimator is a spreadsheet in Google Sheets. To use it:
+\begin{enumerate}
+    \item
+        Make your own copy by selecting File → Make a Copy in the menus.
+    \item
+        In your copy, change the values of the SNR, AB magnitude, and image FWHM to correspond to your science case and expected conditions.
+    \item
+        Note the estimated exposure times in dark and bright conditions.
+\end{enumerate}
+
+We do not recommend single exposures of longer than 60 seconds. For more sensitivity, we recommend taking multiple exposures of 60 seconds or less. We offer random dithering in a circle and dithering on a grid with up to 9 points per grid. The default size of the dither pattern is 1 arcmin diameter or 1 arcmin square, but this can be adjusted for each observation.
+
+\section{Overheads}
+
+To account for overheads, conservatively, you should allow:
+\begin{itemize}
+    \item 10 seconds for readout
+    \item 5 seconds for changing filters
+    \item 10 seconds for dithering
+    \item 30 seconds for the initial pointing
+\end{itemize}
+
+\section{Calibration}
+
+We routinely take flat field, bias, and dark images. We do not routinely observe photometric standards; we typically calibrate our images from the Pan-STARRS or SkyMapper catalogs.
+
+\section{Data Pipeline}
+
+DDRAGO has a data pipeline that can produce a stacked image in each filter (with iterative sky subtraction) and a catalog of photometry of point sources calibrated against Pan-STARRS (for declinations north of $-20$ {\deg}).
+One set of products is produced for each combination of night, block identifier, and visit identifier.
